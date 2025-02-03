@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Filter & Modal</title>
+    <link rel="stylesheet" href="Task12.css">
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="tech">Tech</button>
+        <button class="filter-btn" data-category="art">Art</button>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <img src="nature_1.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="nature_2.jpg" alt="Nature" class="gallery-item" data-category="nature">
+        <img src="tech_1.jpg" alt="Tech" class="gallery-item" data-category="tech">
+        <img src="tech_2.jpg" alt="Tech" class="gallery-item" data-category="tech">
+        <img src="art_1.jpg" alt="Art" class="gallery-item" data-category="art">
+        <img src="art_2.jpg" alt="Art" class="gallery-item" data-category="art">
+    </div>
+
+    <!-- Modal Structure -->
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <script src="Task12.js"></script>
+</body>
+</html>
